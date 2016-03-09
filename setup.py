@@ -26,12 +26,12 @@ conf = config.ConfigParser()
 conf.read(['setup.cfg'])
 metadata = dict(conf.items('metadata'))
 
-PACKAGENAME = metadata.get('package_name', 'packagename')
-DESCRIPTION = metadata.get('description', 'Astropy affiliated package')
-AUTHOR = metadata.get('author', '')
-AUTHOR_EMAIL = metadata.get('author_email', '')
-LICENSE = metadata.get('license', 'unknown')
-URL = metadata.get('url', 'http://astropy.org')
+PACKAGENAME = metadata.get('package_name', 'pygrism')
+DESCRIPTION = metadata.get('description', 'Slitless spectroscopy analysis pipeline.')
+AUTHOR =  metadata.get('author', 'Gabriel Brammer')
+AUTHOR_EMAIL = metadata.get('author_email', 'gbrammer@gmail.com')
+LICENSE = metadata.get('license', 'MIT')
+URL = metadata.get('url', 'http://github.com/gbrammer/pygrism')
 
 # Get the long description from the package's docstring
 __import__(PACKAGENAME)
